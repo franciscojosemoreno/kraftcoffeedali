@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-10 mb-12">
           {/* Brand */}
           <div>
-            <img src={images.logo} alt="Kraft" className="h-14 w-auto mb-4" />
+            <img src={images.logo} alt="Kraft" className="h-14 w-auto mb-4 rounded-full" />
             <p className="font-serif italic text-white/60 text-sm leading-relaxed max-w-xs">
               {siteConfig.tagline}
             </p>

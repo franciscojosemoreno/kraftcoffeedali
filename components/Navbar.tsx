@@ -33,7 +33,7 @@ export default function Navbar() {
           <img
             src={images.logo}
             alt="Kraft"
-            className="h-10 md:h-12 w-auto"
+            className="h-10 md:h-12 w-auto rounded-full"
           />
         </a>
 

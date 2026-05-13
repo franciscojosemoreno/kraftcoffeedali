@@ -46,7 +46,7 @@ export default function Hero() {
             <img
               src={images.logo}
               alt="Kraft"
-              className="h-24 md:h-32 w-auto"
+              className="h-24 md:h-32 w-auto rounded-full"
             />
           </div>
 
