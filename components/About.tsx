@@ -24,7 +24,7 @@ export default function About() {
 
           {/* Left: carousel */}
           <motion.div
-            className="relative aspect-[4/3] overflow-hidden"
+            className="relative h-[420px] md:h-[580px] overflow-hidden"
             initial={{ opacity: 0, x: -40 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7 }}
