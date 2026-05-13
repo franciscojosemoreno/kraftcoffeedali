@@ -6,7 +6,38 @@ import { motion, useInView } from 'framer-motion'
 type Review = { name: string; time: string; text: string }
 
 const reviewsByLocation: Record<string, Review[]> = {
-  canitas: [],
+  canitas: [
+    {
+      name: 'Vero M',
+      time: 'hace 2 meses',
+      text: 'Excelente lugar. La calidad y presentación de los productos es un 10. Entramos de casualidad y el brunch nos sorprendió. El avocado toast con palta verdadera y no solo esa crema artificial que suelen usar en otros lugares. El yogur con un sabor espectacular. El carrot cake, húmedo y sabroso. En fin, todo muy rico.',
+    },
+    {
+      name: 'Nina Vicino',
+      time: 'hace 4 meses',
+      text: '¡Que hermoso lugar por favor!! Mi experiencia en Kraft fue mucho más de lo que esperaba. De entrada un Ice Aperol con focaccia y helado de Pistacho y oliva. Trucha ahumada con helado de palta, vinagreta de maracuyá y batata crocante. Risotto de cebollas moradas con helado de parmesano y nuez tostada. Tanto los dueños como todo el personal son súper amables y atentos. Perfecto para una cita o una noche tranquila llena de sabores.',
+    },
+    {
+      name: 'Abru Hidalgo',
+      time: 'hace 2 meses',
+      text: 'Siempre excelentes! Acá descubrí lo que es un verdadero avocado toast RICO. La atención siempre es más que buena, buenísima diría yo. Me gusta conocer cafeterías de la zona, pero una siempre vuelve a donde es feliz, y yo soy feliz en KRAFT.',
+    },
+    {
+      name: 'Andrea Faggiani',
+      time: 'hace 6 meses',
+      text: 'La experiencia fue buena, hice take away y la atención fue rápida y amable. El latte rico aunque para algunos la temperatura puede ser algo tibia, a mí me gustó. El scon de queso riquísimo.',
+    },
+    {
+      name: 'BeBo 1978',
+      time: 'hace 5 meses',
+      text: 'Excelente, las porciones super abundantes, y una calidad de comida muy buena. Fue una sorpresa muy grata encontrar esta cafetería en las Cañitas, la atención del personal de 10! Recomiendo 100 x 100! Además unos precios increíbles.',
+    },
+    {
+      name: 'Cindy',
+      time: 'hace 5 meses',
+      text: 'Excelente KRAFT! Destaco la estética del lugar, las tortas y tartas. La atención de Joel es muy amable, ayudó cuando a mi hijo se le cayó el café. Un lugar silencioso, agradable para conversar y muy amables con los niños.',
+    },
+  ],
   flores: [],
 }
 
