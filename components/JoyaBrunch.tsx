@@ -71,16 +71,18 @@ export default function JoyaBrunch() {
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
             </div>
-            {/* Two smaller photos */}
-            {images.brunch.slice(1).map((src, i) => (
-              <div key={src} className="aspect-square overflow-hidden">
-                <img
-                  src={src}
-                  alt={`Joya Brunch ${i + 2}`}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            ))}
+            {/* Three smaller photos */}
+            <div className="col-span-2 grid grid-cols-3 gap-3">
+              {images.brunch.slice(1).map((src, i) => (
+                <div key={src} className="aspect-square overflow-hidden">
+                  <img
+                    src={src}
+                    alt={`Joya Brunch ${i + 2}`}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
           </motion.div>
         </div>
 

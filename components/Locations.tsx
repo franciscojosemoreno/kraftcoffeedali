@@ -34,9 +34,6 @@ export default function Locations() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: '-80px' })
 
-  const mainLocations = siteConfig.locations.slice(0, 2)
-  const extraLocations = siteConfig.locations.slice(2)
-
   return (
     <section id="locales" ref={ref} className="py-24 md:py-36 bg-cream-50">
       <div className="container-custom">
@@ -54,9 +51,8 @@ export default function Locations() {
           </p>
         </motion.div>
 
-        {/* Main locations with maps */}
-        <div className="grid md:grid-cols-2 gap-6 mb-6">
-          {mainLocations.map((loc, i) => (
+        <div className="grid md:grid-cols-2 gap-6">
+          {siteConfig.locations.map((loc, i) => (
             <motion.div
               key={loc.id}
               className="bg-white border border-cream-300 overflow-hidden"
@@ -132,40 +128,6 @@ export default function Locations() {
                   )}
                 </div>
               </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* Extra locations */}
-        <div className="grid md:grid-cols-2 gap-4">
-          {extraLocations.map((loc, i) => (
-            <motion.div
-              key={loc.id}
-              className="bg-white border border-cream-300 p-6 flex items-center justify-between"
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
-            >
-              <div>
-                <span className="font-sans text-xs font-bold tracking-[0.2em] uppercase text-kraft-500 block mb-1">
-                  {loc.neighborhood}
-                </span>
-                <h3 className="font-display font-bold text-xl text-kraft-900 mb-2">
-                  {loc.name}
-                </h3>
-                <div className="flex items-center gap-2 text-kraft-600">
-                  <MapPinIcon />
-                  <span className="font-sans text-sm">{loc.address}</span>
-                </div>
-              </div>
-              <a
-                href={loc.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-kraft flex-none text-xs px-5 py-2.5"
-              >
-                Ver en mapa
-              </a>
             </motion.div>
           ))}
         </div>

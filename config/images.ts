@@ -13,5 +13,5 @@ export const images = {
 
   petFriendly: ['/images/pet-1.jpg', '/images/pet-2.jpg'],
 
-  brunch: ['/images/brunch-1.jpg', '/images/brunch-2.jpg', '/images/brunch-3.jpg'],
+  brunch: ['/images/brunch-1.jpg', '/images/brunch-2.jpg', '/images/brunch-3.jpg', '/images/brunch-4.jpg'],
 }

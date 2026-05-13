@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
+import About from '@/components/About'
 import Menu from '@/components/Menu'
 import Gallery from '@/components/Gallery'
 import PetFriendly from '@/components/PetFriendly'
@@ -14,6 +15,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <About />
         <Menu />
         <Gallery />
         <PetFriendly />

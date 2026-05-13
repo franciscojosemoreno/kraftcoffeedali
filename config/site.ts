@@ -69,7 +69,7 @@ export const siteConfig = {
   ],
 
   joyaBrunch: {
-    title: 'Joya Brunch',
+    title: 'Yoga Brunch',
     tagline: 'Un plan como nos gusta.',
     description:
       'Desconectando de la rutina, bajando el ritmo, disfrutando en grupo y compartiendo la mesa. Una jornada de yoga, soundhealing con cuencos, workshop de charms e indumentaria. Así se viven los días en Kraft, donde cada encuentro nos inspira a seguir creando espacios para compartir.',
