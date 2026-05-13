@@ -38,7 +38,38 @@ const reviewsByLocation: Record<string, Review[]> = {
       text: 'Excelente KRAFT! Destaco la estética del lugar, las tortas y tartas. La atención de Joel es muy amable, ayudó cuando a mi hijo se le cayó el café. Un lugar silencioso, agradable para conversar y muy amables con los niños.',
     },
   ],
-  flores: [],
+  flores: [
+    {
+      name: 'Pablo Ferraro',
+      time: 'hace 2 meses',
+      text: 'Muy buena atención, mozos amables, el desayuno con palta excelente, muy rico y fresco. La Lágrima muy rica también. Tiene mesitas en la vereda y adentro en la parte superior.',
+    },
+    {
+      name: 'Carla Miras',
+      time: 'hace 4 meses',
+      text: 'Excelente café ubicado en la zona más comercial de Flores. Café de especialidad, elaboración artesanal con productos de excelente calidad. Muy buena atención, me recomendaron probar las cookies y fue una excelente decisión. Muy recomendable!',
+    },
+    {
+      name: 'Fernando Vázquez',
+      time: 'hace 3 meses',
+      text: 'Muy ricas las ensaladas, son súper abundantes. Lindo lugar para comer si vas de compras a Av. Avellaneda.',
+    },
+    {
+      name: 'Nahir Bancora',
+      time: 'hace un año',
+      text: 'Mi nueva cafetería favorita del barrio. Nos pedimos el toffe latte y el coco latte. La estrella es el scon de queso que además de ser re económico tenía mucho sabor a orégano, 10/10. Nos atendieron rápido y había un DJ pasando música. Totalmente recomendable.',
+    },
+    {
+      name: 'Lucas A. Schmidt',
+      time: 'hace 11 meses',
+      text: 'Buena música, rica gastronomía, los empleados bien predispuestos y atentos. El café muy rico y encima nos dieron unos bocaditos de cortesía. Me queda lejos pero volvería mil veces más. Gracias chicos.',
+    },
+    {
+      name: 'Sofia Rodriguez',
+      time: 'hace 5 meses',
+      text: 'Excelente atención, pedí y a los 5 minutos ya tenía todo en la mesa. Rico y abundante.',
+    },
+  ],
 }
 
 function Stars() {
