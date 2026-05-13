@@ -64,7 +64,7 @@ export default function JoyaBrunch() {
             transition={{ duration: 0.7, delay: 0.1 }}
           >
             {/* Large first photo */}
-            <div className="col-span-2 aspect-[16/9] overflow-hidden">
+            <div className="col-span-2 h-[340px] md:h-[460px] overflow-hidden">
               <img
                 src={images.brunch[0]}
                 alt="Joya Brunch 1"
@@ -74,7 +74,7 @@ export default function JoyaBrunch() {
             {/* Three smaller photos */}
             <div className="col-span-2 grid grid-cols-3 gap-3">
               {images.brunch.slice(1).map((src, i) => (
-                <div key={src} className="aspect-square overflow-hidden">
+                <div key={src} className="h-[220px] md:h-[280px] overflow-hidden">
                   <img
                     src={src}
                     alt={`Joya Brunch ${i + 2}`}

@@ -32,7 +32,7 @@ export default function PetFriendly() {
           {images.petFriendly.map((src, i) => (
             <motion.div
               key={src}
-              className="aspect-[4/3] overflow-hidden"
+              className="h-[420px] md:h-[560px] overflow-hidden"
               initial={{ opacity: 0, x: i === 0 ? -30 : 30 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.1 * i }}
